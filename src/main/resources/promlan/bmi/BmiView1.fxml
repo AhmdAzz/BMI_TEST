@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="828.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="controller.BmiView1Controller">
+   <children>
+      <ImageView fitHeight="456.0" fitWidth="828.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@result.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelAngkaBmi" layoutX="639.0" layoutY="133.0" prefHeight="30.0" prefWidth="60.0" text="labelAngkaBmi">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelKategori" layoutX="639.0" layoutY="219.0" prefHeight="24.0" prefWidth="60.0" text="labelKategori">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelBeratIdeal" layoutX="639.0" layoutY="288.0" prefHeight="24.0" prefWidth="60.0" text="labelBeratIdeal">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

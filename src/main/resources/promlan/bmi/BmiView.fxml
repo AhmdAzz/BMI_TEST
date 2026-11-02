@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BmiViewController">
+   <children>
+      <ImageView fitHeight="438.0" fitWidth="828.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BMI%20TEST.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioPria" layoutX="502.0" layoutY="176.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupGender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioWanita" layoutX="729.0" layoutY="176.0" mnemonicParsing="false" toggleGroup="$grupGender" />
+      <TextField fx:id="inputTinggi" layoutX="484.0" layoutY="237.0" prefHeight="26.0" prefWidth="283.0" />
+      <Label layoutX="480.0" layoutY="219.0" text="Tinggi Badan(cm)" />
+      <TextField fx:id="inputBerat" layoutX="484.0" layoutY="299.0" prefHeight="26.0" prefWidth="283.0" />
+      <Label layoutX="484.0" layoutY="281.0" text="Berat Badan(kg)" />
+      <Button layoutX="484.0" layoutY="353.0" mnemonicParsing="false" onAction="#klikTombolHitung" prefHeight="46.0" prefWidth="283.0" text="CEK" />
+      <Label layoutX="500.0" layoutY="150.0" text="Pria" />
+      <Label layoutX="718.0" layoutY="150.0" text="Wanita" />
+   </children>
+</AnchorPane>
